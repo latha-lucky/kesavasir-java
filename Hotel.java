@@ -1,15 +1,18 @@
-package com.jspider.p1;
+package example;
 
 public class Hotel {
 	String name;
-	double  rating;
-	Hotel(String name,double rating){
-		this.name=name;
-		this.rating=rating;
+	Double rating;
+	
+	public Hotel(String name, Double rating) {
+		this.name = name;
+		this.rating = rating;
 	}
-	public boolean equals(Object obj) {
-		Hotel h=(Hotel)obj;
-		return this.name ==(h.name) && this.rating ==h.rating;
+
+	@Override
+	public String toString() {
+		return "Hotel [name=" + name + ", rating=" + rating + "]";
 	}
+	
 
 }

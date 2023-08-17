@@ -1,14 +1,11 @@
-package com.jspiders;
+package com.ty;
 
-public class Student {
-	int id;
-	String name;
-	Student(int id,String name){
-		this.id=id;
-		this.name=name;
-	}
-	public String toString() {
-		return("Id:"+id+" "+"Name:"+name);
-	}
+public interface Student {
+	void addStudent();
+	void deleteStudent();
+	void updateStudent();
+	void getAllStudent();
+	void deleteAllStudent();
+	void getStudentById();
 
 }

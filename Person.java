@@ -1,11 +1,17 @@
-package com.jspiders;
+package com.jspider.p1;
 
-public class Person {
-	String name;
-	int age;
-	Person(String name,int age){
-		this.name=name;
-		this.age=age;
-	}
-
+abstract class Person {
+	abstract void eat();
 }
+class Jack extends Person{
+	
+	void eat() {
+		System.out.println("eating biryani");
+	}
+	public static void main(String[] args) {
+		Jack j=new Jack();
+		j.eat();
+		
+	}
+}
+

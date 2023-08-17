@@ -1,4 +1,4 @@
-package arrayprogramms.com;
+package com.example;
 
 public class UniqueElements {
 	public static void main(String[] args) {
@@ -10,7 +10,6 @@ public class UniqueElements {
 				if(arr[i]==arr[j]) {
 					c++;
 				}
-				
 			}
 			if(c==1) {
 				System.out.println(arr[i]);
