@@ -1,14 +1,11 @@
-package com.jspider.p1;
+package com.jspiders;
 
 public class Person {
-	int age;
 	String name;
-	Person(int age,String name){
-		this.age=age;
+	int age;
+	Person(String name,int age){
 		this.name=name;
+		this.age=age;
 	}
-	public String toString() {
-		return name+" "+age;
-	}
-}
 
+}

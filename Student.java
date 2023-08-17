@@ -1,11 +1,14 @@
-package com.jspider.p1;
+package com.jspiders;
 
 public class Student {
-	public static void main(String[] args) {
-		Student s=new Student();
-		System.out.println(s);
-		System.out.println(s.toString());
-		
+	int id;
+	String name;
+	Student(int id,String name){
+		this.id=id;
+		this.name=name;
+	}
+	public String toString() {
+		return("Id:"+id+" "+"Name:"+name);
 	}
 
 }

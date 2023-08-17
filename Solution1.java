@@ -1,21 +1,24 @@
-package example;
+package com.jspiders;
+
+import java.util.LinkedHashMap;
+import java.util.Set;
 
 public class Solution1 {
 	public static void main(String[] args) {
-		Employee e1=new Employee(1234,"tom");
-		Employee e2=new Employee(124,"smith");
-        Employee e3=new Employee(123,"jerry");
-        
-        Employee []emp= {e1,e2,e3};
-        
-        for(int i=0;i<emp.length;i++) {
-        	System.out.println(emp[i]);
-        }
-        System.out.println("=================");
-        for(int i=0;i<emp.length;i++) {
-        	System.out.println(emp[i].id+" "+emp[i].name);
-        }
-        
+		Student s1=new Student(100,"A");
+		Student s2=new Student(200,"C");
+		Student s3=new Student(300,"B");
+		
+		LinkedHashMap<Student,Integer>l=new LinkedHashMap<Student,Integer>();
+		l.put(s1, 50);
+		l.put(s2, 60);
+		l.put(s3, 70);
+		
+		Set<Student>keys=l.keySet();
+		for(Student key:keys) {
+			System.out.println(key+"marks"+l.get(key));
+		}
+		
 	}
 
 }

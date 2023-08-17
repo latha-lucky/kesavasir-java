@@ -1,16 +1,25 @@
-package example;
+package com.jspiders;
+
+import java.util.HashMap;
 
 public class Demo {
 	public static void main(String[] args) {
-		System.out.println("start");
-		int []a= {10,20,30};
-		try {
-			System.out.println(a[100]);
-		}
-		catch(Exception e) {
-			System.out.println("invalid index");
-		}
-		System.out.println("end");
+		HashMap map=new HashMap();
+		map.put(10, "guldu");
+		map.put("Dinaga", 45.6);
+		map.put(45.1, 555);
+		System.out.println(map);
+		System.out.println(map.get(10));
+		System.out.println(map.containsKey("dinga"));
+		System.out.println(map.containsValue(555));
+		System.out.println("==========");
+		System.out.println(map);
+		map.remove(10);
+		System.out.println(map);
+		System.out.println("==========");
+		System.out.println(map.isEmpty());
+		map.clear();
+		System.out.println(map.isEmpty());
 		
 	}
 
