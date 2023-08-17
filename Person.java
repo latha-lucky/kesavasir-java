@@ -1,10 +1,9 @@
-package com.jspider.p1;
+package com.jspiders.p1;
 
-abstract class Person {
-	abstract void eat();
+abstract  class Person {
+	abstract void eat();	
 }
 class Jack extends Person{
-	
 	void eat() {
 		System.out.println("eating biryani");
 	}
@@ -14,4 +13,3 @@ class Jack extends Person{
 		
 	}
 }
-

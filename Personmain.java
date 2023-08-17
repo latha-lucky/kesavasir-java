@@ -1,11 +1,11 @@
-package com.jspider.p1;
+package com.jspiders.p1;
 
 public class Personmain {
+
 	public static void main(String[] args) {
-		Person p=new Person(21,"latha");
-		System.out.println(p);
-		System.out.println(p.toString());
-		
+		CalculatorImpl c1=new CalculatorImpl();
+		c1.add(34,34);
+
 	}
 
 }

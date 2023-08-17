@@ -1,20 +1,14 @@
-package com.jspiders.p1;
-
-public class Reverse {
-
-	public static void main(String[] args) {
-		int n=5967;
-		System.out.println(n%10);
-		n=n/10;
-		System.out.println(n%10);
-		n=n/10;
-		System.out.println(n%10);
-		n=n/10;
-		System.out.println(n%10);
-		n=n/10;
-		System.out.println(n%10);
-		
-
+class Reverse
+{   public static void reversearray(int [] a)
+	{
+		for(int index=a.length-1;index>=0;index--)
+		{
+			System.out.println(a[index]);
+		}
 	}
-
+	public static void main(String[] args) 
+	{
+		int [] a={1,2,3,4,5,6,7};
+		reversearray(a);
+	}
 }

@@ -1,10 +1,13 @@
-package com.jspiders;
+package com.jspiders.p1;
 
 public class Employee1 {
-	public static void main(String[] args) {
-		Employee e1=new Employee(100,"tom");
-		Employee e2=new Employee(200,"jerry");
-		Employee e3=new Employee(300,"latha");
+	int id;
+	String name;
+	double salary;
+	public Employee1(int id,String name,double salary) {
+		this.id=id;
+		this.name=name;
+		this.salary=salary;
 	}
 
 }

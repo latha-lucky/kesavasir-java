@@ -1,18 +1,20 @@
-package example;
+package com.jspiders.p1;
 
 public class Hotel {
-	String name;
-	Double rating;
-	
-	public Hotel(String name, Double rating) {
-		this.name = name;
-		this.rating = rating;
+	Food orderFood(int choice) {
+		if(choice==1) {
+			Idly i=new Idly();
+			return i;
+			
+		}
+		else if(choice==2) {
+			Dosa d=new Dosa();
+			return d;
+		}
+		else {
+			Puri p=new Puri();
+			return p;
+		}
 	}
-
-	@Override
-	public String toString() {
-		return "Hotel [name=" + name + ", rating=" + rating + "]";
-	}
-	
 
 }

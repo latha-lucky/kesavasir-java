@@ -1,4 +1,4 @@
-package com.jspider.p1;
+package com.jspiders.p1;
 
 public class Studentequals {
 	int age;
@@ -13,4 +13,3 @@ public class Studentequals {
 	}
 
 }
-
