@@ -1,46 +1,29 @@
-class Account3
+class Demo
 {
-	String name;
-	long accno;
-	String ifsc;
-	double bal;
-	String branch;
-    String bankname;
-	public Account(String name,long accno,String ifsc,double bal,String branch,String bankname)
+   Demo()
+   {
+   	System.out.println("running demo ()constructor");
+   }
+}
+class Demo1 extends Demo{
+	Demo1()
 	{
-		this.name=name;
-		this.accno=accno;
-		this.ifsc=ifsc;
-		this.bal=bal;
-		this.branch=branch;
-		this.bankname=bankname;
+		System.out.println("running demo1 ()constructor");
 	}
-	public void showaccountdetails()
+}
+class Demo2 extends Demo1
+{
+	Demo2()
 	{
-		System.out.println(name);
-		System.out.println(accno);
-		System.out.println(ifsc);
-		System.out.println(bal);
-		System.out.println(branch);
-	}
-	public void deposit(double amt)
-	{
-		bal=bal + amt;
-		System.out.println(bal);
-	}
-	public void withdraw(double amt)
-	{
-		bal=bal -amt;
-		System.out.println(bal);
+		System.out.println("running demo2 ()constructor");
 	}
 }
 class Main7
 {
 	public static void main(String[] args) 
 	{
-		 Account a1=new Account("latha","1234456l",1123,23000.0,"btm","icici");
-		 a1.showaccountdetails();
-		
-		
+		Demo1 d1=new Demo1();
+		System.out.println("=========");
+		Demo2 d2=new Demo2();
 	}
 }
